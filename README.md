@@ -47,3 +47,11 @@ Once with the final version you must <span style="color:mediumBlue">make a pull 
 -------------------------------------------------------------------------------------------------
 
 This project is part the first evaluation of the micro-credetial that is offered by [VIB](https://vib.be/en#/) and [UGent](https://www.ugent.be/en) with the aim to improve data analysis reproducbility in science. A micro-credential is like a mini-diploma that you have followed a course and learnd a new skill that is valuable for your carrear. If you are interested to register you can find more detais in the [UGent registration page](https://studiekiezer.ugent.be/2025/micro-credential-reproducible-data-analysis-an-essential-capability-in-modern-science-en).
+
+
+# finalization of this project
+In the develop_ilse branch the all documentation can be found in the doc folder. 
+i.e. a cheatcheet for the git commands and a documentation file which describes the git concepts.
+additionally there is a ref folder with a references file
+a res folder with some pictures
+a src folder with some basic code

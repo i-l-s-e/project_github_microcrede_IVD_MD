@@ -62,3 +62,20 @@ tags the current commit
 
 `git tag <name> <commitID>`
 tag a previous commit
+
+`git merge` <branchname>
+to merge this branch to the checkout branch
+
+`git clean` -f
+to remove untracked files like rds files or temporarily files
+
+`git stash`
+Temporarily saves changes that are not ready to commit, allowing you to switch branches without committing.
+
+`git cherry-pick` <commit>
+Given one or more existing commits, apply the change each one introduces, recording a new commit for each. 
+Apply a single commit from one branch onto another.
+useful when you only want to take a specific change without merging the entire branch.
+
+`git blame`
+hows who last modified each line in a file — great for debugging or tracking code changes.

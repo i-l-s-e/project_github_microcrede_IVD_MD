@@ -1,0 +1,66 @@
+#dictionary
+
+- Git: git is your own timeline of your project
+- GitHub: this is the online repository of all timelines as a backup
+
+#COMMANDS
+    -git commit meassage:
+        Why your change
+        How you did it
+        Effects that it has
+        Limitations it has
+    - commit command:
+        git add file
+        git commit -m "message"
+        Note: if you do git commit then an editor will open to have a more extensive message
+    - check where your files are stored:
+        git status
+            to be comitted: changed added but not committed yet
+            not staged: tracked before but more changes not added yet
+            untracked: never tracked before, it is a new file that need to be added
+        
+    
+# four areas
+    Area 1
+        Developping area: your own project in your own folder
+    Area 2
+        Staging area: place to prepare the changes. This when you do git add, your changes are organised in this step
+        why using the staging area? this will improve the commits and allow you to organize the commits logically, if you have mulitple changes you can add according to a meaningful logic in stead of committing all at once
+    Area 3
+        Local repository: this is where your timeline exists, it is located in your folder as .git
+        this is the place where your changes go to after git commit
+    Area 4
+        github repository: the online repository; backup of all your timelines
+        note you can only delete, rename the repositories that you own (the one you have created)
+        you can push and pull for repos that you are invited to collaborate with
+
+# other files
+    readme file
+        the presentation of your project
+    .gitignore
+        ignores the files that don`t need to be tracked in git, like large data
+        eg: *.csv add also the .gitignore itself
+
+# bugs solving
+ if github complains about the ssh, you need to update the ssh
+
+# branches
+to be used to collaborate; to experiment
+
+# tagging
+you can tag the working version to keep the commits highlighted as working versions
+use git tag, tags are not automatically pushed to git hub , you have to push the tags to github
+in github, you can download the tagged version, it is under release and people can just download the releases
+
+# forking
+you create a remote copy ( >< clone; where you create a local copy>)
+cloning is creating a copy from the github repo to your local computer, but you only are allowed to push and pull if you are owning the repo or a collaborator
+once you fork a public repor, you can clone it from your repo to your local computer
+you can use the forking as an alternative to branches and wokring together
+
+# github nice features
+you open vscode directly in github by going inside a project and press . 
+you can also create issues, within the document pressing right button on a certain line
+or in the issue tab in github
+and you can assign to colleagues
+

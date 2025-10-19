@@ -22,7 +22,7 @@ gives you a comparison between the 2 commits, note oldest file first and newest 
 `git show commit1 commit2`
 shows you both commits so that you can see more information but the changes are separately presented and not line by line
 
-`git remote add origin` <adress>
+`git remote add origin` <address>
 create the bridge between local repository and github repository, copy the adress from your github page after you created a new repository, the name of the bridge is origin
 
 `git push`

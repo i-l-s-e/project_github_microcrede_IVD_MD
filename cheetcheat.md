@@ -12,3 +12,4 @@ You can fork a remote repository for which you are not a collaborator directly o
 Using `.gitignore` file, you can list the different files of the project that should be ignored by git (*i.e.* not tracked), *e.g.* datasets, intermediate files
 
 This is non-sense !!!!
+And this is also non-sense common !!!

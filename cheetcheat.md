@@ -11,3 +11,8 @@ You can fork a remote repository for which you are not a collaborator directly o
 # Managing sensitive files on your local repo
 Using `.gitignore` file, you can list the different files of the project that should be ignored by git (*i.e.* not tracked), *e.g.* datasets, intermediate files
 
+# Error management 
+If I want to go back to a previous commit because I accidentally changed the file, I can either use `git reset --hard <commit ID I want to go back to>` but that would delete permanently all the following commits, which is dangerous.
+
+I can also use `get revert <commit ID I want to remove>` which will create a new commit that go back to where I want, but I can still access the commit I removed if I want.
+

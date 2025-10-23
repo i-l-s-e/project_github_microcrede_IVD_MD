@@ -38,6 +38,8 @@
 
 `git reset --hard <commit ID>`: permanently delete further commits
 
+`git bisect`: binary search through commits to identify the specific one where the bug happened
+
 ## branches
 
 `git checkout -b <branch name>`: create a new branch 
@@ -50,11 +52,12 @@
 
 ## tags
 
-`git tag <current branch-commit tag>`: to tag the current commit and branch where you are located, will be available on github with its corresponding zip file once pushed. It is used to tag different versions of a project (v1, v1.2 etc). You can add many tag to the same commit.
+`git tag -a <tag> -m "my version 1.4"`: to tag the current commit and branch where you are located, will be available on github with its corresponding zip file once pushed. It is used to tag different versions of a project (v1, v1.2 etc). You can add many tag to the same commit.
 
-`git tag <tag> <commit ID>`
+`git tag <tag> <specific commit ID>`
 
 `git push --tag` 
+
 
 
 

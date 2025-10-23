@@ -24,6 +24,8 @@ If I want to go back to a previous commit because I accidentally changed the fil
 
 I can also use `get revert <commit ID I want to remove>` which will create a new commit that go back to where I want, but I can still access the commit I removed if I want.
 
+If there is a bug in your code and you cannot identify where it happened, you can use `git bisect start`to start a binary search through your commits. You specify a commit that you know already contains the bug (`git bisect bad <commit ID>`) and a previous one that was good (`git bisect good <commit ID>`). It will then ask you if another commit between these two timepoints is good or bad (hence binary). After a few iterations, it should find the specific commit where the bug happened.
+
 # Branches
 If you create a branch it is mirroring your main branch. You can make changes in your side branch without changing your main. you can create a new branch with `git branch <branch name>` and got into it with `git checkout <branch name>`or `git checkout -b <branch name>`
 

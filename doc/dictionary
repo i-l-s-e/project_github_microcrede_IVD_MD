@@ -1,0 +1,47 @@
+# Dictionary of Git/GitHub concepts
+- Git: Timeline of your project
+- Github: The way to store online
+- 
+# 4 Conceptual areas
+- developing area: in your computer, the folder where the project is developed
+- staging area: place to prepare the commit (transition between develop. area and local repo. via `git add`). it allows to commit file A and B that are related in the project at the same time, as you can wait for file A and B to be in the staging area before commiting. 
+- local repository: where the file version is saved on git after `git commit`.
+- remote repository: the remote server where the project is saved (usually on GitHub). You can send commits from the local to the remote repository using `git push`
+
+# Fork and Clone
+When you are not a collaborator of a remote repository, you can clone it but cannot push/pull commits as you do not have authorization. you can neither push it to yout own remote repository. If you still want to use a remote repository that interest you and modify it, you can **fork** it on your own remote (github) repository. It is like cloning a remote repository but remotly. You own this new remote reposity, you can clone it locally and push/pull to your remote repository. 
+
+It is like starting a new project, but not from scratch, and forking it will establish a link with the owner, aknowledging its initial contribution, exactly like a citation.
+
+With collaborators, by forking and not cloning the remote repository, it allows to maintain only one repo and each changes need to be accepted by the owner --> less branch management.
+
+
+# Managing sensitive files on your local repo
+Using `.gitignore` file, you can list the different files of the project that should be ignored by git (*i.e.* not tracked), *e.g.* datasets, intermediate files
+
+# Error management 
+If I want to go back to a previous commit because I accidentally changed the file, I can either use `git reset --hard <commit ID I want to go back to>` but that would delete permanently all the following commits, which is dangerous.
+
+I can also use `get revert <commit ID I want to remove>` which will create a new commit that go back to where I want, but I can still access the commit I removed if I want.
+
+If there is a bug in your code and you cannot identify where it happened, you can use `git bisect start`to start a binary search through your commits. You specify a commit that you know already contains the bug (`git bisect bad <commit ID>`) and a previous one that was good (`git bisect good <commit ID>`). It will then ask you if another commit between these two timepoints is good or bad (hence binary). After a few iterations, it should find the specific commit where the bug happened.
+
+# Branches
+If you create a branch it is mirroring your main branch. You can make changes in your side branch without changing your main. you can create a new branch with `git branch <branch name>` and got into it with `git checkout <branch name>`or `git checkout -b <branch name>`
+
+then you can modify a file in that branch and push that to the remote repository. The first time you push (after `git add`and `git commit` in the new branch, you need to link it to the remote with `git push -u origin <branch name>`).
+
+you only have one actual version of a file in your local repository, but the .git file stores the versions of all branches you have locally. when you `git checkout`to a branch, it changes the version of the file and you can change this specific version (this branch) with add and commit.
+
+Rather than using `git add`, `git commit`and `git push` to store changes made in one branch to the remote repository, you can store them locally using `git stash`. It takes a snapshot of changes within one branch, which allows you to quickly checkout. Then, you can come back to these changes using `git stash pop`.
+
+# Conflicts while merging
+You can merge side branches with the main using `git merge <branch_name>`. If there are conflicts, you need to change the files conflicted as you think is best to blend the two versions, then add and commit the new version of the file. It will automatically merge the branches afterwards.
+
+# Github editor
+By pressing the `dot key` of your keyboard when you are on your github page, it redirect you directly to the github web editor, which is basically VSCode. It allows you to not clone each repository locally to modify them.
+
+# Issues
+On github, you can assign issues to collaborators, *i.e* specific problems in the files that need to be addressed. To link to a specific line in your code, you just need to go to the code file on github, click on the line number, and copy/paste the given URL in the issue message.
+
+

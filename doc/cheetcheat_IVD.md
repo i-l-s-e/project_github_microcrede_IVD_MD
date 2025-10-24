@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Basic Commands
 
 `git add`  <file>

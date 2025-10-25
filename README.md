@@ -50,8 +50,11 @@ This project is part the first evaluation of the micro-credetial that is offered
 
 
 # finalization of this project
-In the develop_ilse branch the all documentation can be found in the doc folder. 
+In the develop_ilse branch all documentation can be found in the doc folder. 
 i.e. a cheatcheet for the git commands and a documentation file which describes the git concepts.
+Note that 2 conflicts occured: 1 by MD who solved the issue regarding the .gitignore file and 1 conflict when merging IVD branch with the main. Due to this last conflict 2 cheetcheat documents are defined and 2 documentation documents (documents and dictionary) 
 additionally there is a ref folder with a references file
 a res folder with some pictures
 a src folder with some basic code
+and an authors file.
+
